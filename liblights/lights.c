@@ -317,7 +317,7 @@ const struct hw_module_t HAL_MODULE_INFO_SYM = {
 	.version_major = 2,
 	.version_minor = 0,
 	.id = LIGHTS_HARDWARE_MODULE_ID,
-	.name = "Liberty lights module",
+	.name = "Marvel lights module",
 	.author = "Diogo Ferreira <diogo@underdev.org>",
 	.methods = &lights_module_methods,
 };

@@ -34,6 +34,6 @@
     <string name="userAgent">Android-Mms/0.1</string>
 
     <!-- UAProf URL -->
-    <string name="uaProfUrl">http://www.htcmms.com.tw/Android/Common/aria/ua-profile.xml</string>
+    <string name="uaProfUrl">http://www.htcmms.com.tw/Android/Common/marvel/ua-profile.xml</string>
 
 </mms_config>
