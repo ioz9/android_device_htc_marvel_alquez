@@ -108,6 +108,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 TARGET_PREBUILT_KERNEL := device/htc/marvel/prebuilt/kernel
 LOCAL_KERNEL := device/htc/marvel/prebuilt/kernel
 
+BOARD_CAMERA_USE_GETBUFFERINFO := true
+TARGET_SPECIFIC_HEADER_PATH := device/htc/marvel/include
+
 #TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/marvel/prebuilt/recovery_kernel
 #BOARD_USES_RECOVERY_CHARGEMODE := true
 TARGET_RECOVERY_INITRC := device/htc/marvel/init.recovery.rc
