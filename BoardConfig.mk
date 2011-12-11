@@ -25,6 +25,7 @@
 # against the traditional rules of inheritance).
 USE_CAMERA_STUB := false
 JS_ENGINE:=v8
+BOARD_USE_FROYO_LIBCAMERA := true
 
 # inherit from the proprietary version
 -include vendor/htc/marvel/BoardConfigVendor.mk
@@ -33,7 +34,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 TARGET_BOARD_PLATFORM := msm7k
-TARGET_ARCH_VARIANT := armv6j
+TARGET_ARCH_VARIANT := armv6-vfp
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 
 TARGET_CPU_ABI := armeabi-v6l
@@ -75,11 +76,10 @@ BOARD_EGL_CFG := device/htc/marvel/egl.cfg
 
 BOARD_USES_QCOM_LIBS := true
 
-BOARD_USE_NASTY_PTHREAD_CREATE_HACK := false
+BOARD_USE_NASTY_PTHREAD_CREATE_HACK := true
 
 BOARD_USE_NEW_LIBRIL_HTC := true
 
-BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 BOARD_NO_RGBX_8888 := true
 
 BOARD_USES_QCOM_GPS := true
@@ -108,8 +108,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 TARGET_PREBUILT_KERNEL := device/htc/marvel/prebuilt/kernel
 LOCAL_KERNEL := device/htc/marvel/prebuilt/kernel
 
-BOARD_CAMERA_USE_GETBUFFERINFO := true
-TARGET_SPECIFIC_HEADER_PATH := device/htc/marvel/include
+#BOARD_CAMERA_USE_GETBUFFERINFO := true
+#TARGET_SPECIFIC_HEADER_PATH := device/htc/marvel/include
 
 #TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/marvel/prebuilt/recovery_kernel
 #BOARD_USES_RECOVERY_CHARGEMODE := true
